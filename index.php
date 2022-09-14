@@ -7,7 +7,7 @@
 
 <head>
 	
-	<title>Página de Teste</title>
+	<title><?php load_titulos(); ?></title>
 
 </head>
 
