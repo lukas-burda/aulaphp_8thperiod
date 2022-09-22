@@ -1,10 +1,10 @@
 <?php 
-function connect_db(){
+function conn_db(){
     return new PDO("mysql:host=127.0.0.1:3308; dbname=aula-database","root","");
 }
 
 function fetchpessoas(){
-    $pdo = connect_db();
+    $pdo = conn_db();
 
     $sql = $pdo -> prepare("SELECT * FROM PESSOAS");
     $sql -> execute();
@@ -12,8 +12,8 @@ function fetchpessoas(){
 }
 
 function create($pessoa){
-    $pdo = connect_db();
-    $sql = $pdo -> prepare("INSERT INTO pessoas VALUES(null, ?, ?, ?, '2022-09-05 20:30:00')");
+    $pdo = conn_db();
+    $sql = $pdo -> prepare("INSERT INTO pessoas VALUES(null, ?, ?, ?, '".date("m/d/Y h:i:s", time())."')");
     $sql -> execute(array_values($pessoa));    
 }
 
@@ -22,7 +22,7 @@ function delete($id){
     if($id){
         $id = (int) $_GET['delete'];
         
-        $pdo = connect_db();
+        $pdo = conn_db();
         $pdo -> exec("DELETE FROM PESSOAS WHERE ID =$id");
         echo "Pessoa $id deletada";
     };
@@ -30,7 +30,7 @@ function delete($id){
 
 function edit($pessoa){
     if(isset($pessoa)){
-        $pdo = connect_db();
+        $pdo = conn_db();
         $pdo -> exec('UPDATE 
         pessoas SET name ="'.$_POST['name'].'",
         document="'.$_POST['document'].'",

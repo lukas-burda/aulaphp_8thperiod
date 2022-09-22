@@ -1,7 +1,5 @@
 <?php
     require_once('./functions/crud.php');
-
-    
     
     if(isset($_GET['delete'])){
         $id = (int) $_GET['delete'];
@@ -37,7 +35,6 @@
                 create($pessoa);
             }
         }
-        
     }
 ?>
 
