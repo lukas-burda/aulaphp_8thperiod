@@ -14,4 +14,3 @@ function load_titulos()
       break;
   }
 }
-?>

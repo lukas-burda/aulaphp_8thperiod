@@ -1,15 +1,5 @@
 <?php 
-function conn_db(){
-    return new PDO("mysql:host=127.0.0.1:3308; dbname=aula-database","root","");
-}
-
-function fetchpessoas(){
-    $pdo = conn_db();
-
-    $sql = $pdo -> prepare("SELECT * FROM PESSOAS");
-    $sql -> execute();
-    return $sql -> fetchall();
-}
+require_once('dbcontext.php');
 
 function create($pessoa){
     $pdo = conn_db();
@@ -39,5 +29,3 @@ function edit($pessoa){
         echo "Alterado com Sucesso!<br>";
     }
 }
-
-?>
