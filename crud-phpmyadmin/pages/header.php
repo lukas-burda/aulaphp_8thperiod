@@ -1,6 +1,6 @@
 <div>
-    <button class="btn"><a href='?p=home'>🏠</a></button>
-    <button class="btn"><a href='?p=form'>Cadastrar</a></button>
-    <button class="btn"><a href='?p=pessoas'>Listar</a></button>
+    <a href='?p=home'><button class="btn">🏠</button></a>
+    <a href='?p=form'><button class="btn">Cadastrar</button></a>
+    <a href='?p=pessoas'><button class="btn">Listar</button></a>
 </div>
 <hr>

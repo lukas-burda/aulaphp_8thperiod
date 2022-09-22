@@ -1,7 +1,3 @@
 <?php
-    require_once('./functions/functions.php');
-
-    include 'header.php';
-    load_page();
-    include 'footer.php'; 
+    echo 'Bem vindo a tela inicial!';
 ?>

@@ -42,7 +42,6 @@
 ?>
 
 <form action="<?= isset($name)? "./?p=form&editar=$id": "" ?>" method="post">
-    <hr style="margin-top: 25px">
     <input name="id" disabled value="<?= isset($name)? $id : ""; ?>"><br>
     <label>Nome</label>
     <input type="text" name="name" value="<?= isset($name)? $name : ""; ?>"><br>
@@ -50,5 +49,5 @@
     <input type="text" name="document" value="<?= isset($document)? $document : ""; ?>"><br>
     <label>Type</label>
     <input type="text" name="type" value="<?= isset($type)? $type : ""; ?>"><br>
-    <input type="submit" value="save">
+    <button type="submit" value="save" class="btn btn-success"> Salvar</button>
 </form>

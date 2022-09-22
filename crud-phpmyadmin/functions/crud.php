@@ -24,7 +24,7 @@ function delete($id){
         
         $pdo = connect_db();
         $pdo -> exec("DELETE FROM PESSOAS WHERE ID =$id");
-        echo "Cliente $id deletado";
+        echo "Pessoa $id deletada";
     };
 }
 
