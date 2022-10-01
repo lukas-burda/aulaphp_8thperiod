@@ -1,4 +1,4 @@
 <div>
-    <a href='?p=home'><button class="btn">🏠</button></a>
+    <a href='?p=home'><button>Home</button></a>
 </div>
 <hr>

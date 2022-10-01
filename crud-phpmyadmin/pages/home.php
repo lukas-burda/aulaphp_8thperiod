@@ -1,16 +1,21 @@
 <?php
-echo '<h1>Bem vindo a tela inicial!</h1>';
+echo '<h1>Olá mundo!</h1>';
 ?>
 
 <div>
-    <h4> Nosso menu de CRUDs:</h4>
+    <h4>Cruds:</h4>
     <div>
-        <a href='?p=formpessoa'><button class="btn">Cadastrar pessoa</button></a>
-        <a href='?p=pessoas'><button class="btn">Listar pessoas</button></a>
+        <a href='?p=formpessoa'><button>Cadastrar pessoa</button></a>
+        <a href='?p=pessoas'><button>Listar pessoas</button></a>
     </div>
     <br>
     <div>
-        <a href='?p=formaddresses'><button class="btn">Cadastrar endereço</button></a>
-        <a href='?p=addresses'><button class="btn">Listar endereços</button></a>
+        <a href='?p=formaddresses'><button>Cadastrar endereço</button></a>
+        <a href='?p=addresses'><button>Listar endereços</button></a>
+    </div>
+    <br>
+    <div>
+        <a href='?p=formcars'><button>Cadastrar carro</button></a>
+        <a href='?p=cars'><button>Listar carros</button></a>
     </div>
 </div>

@@ -35,11 +35,15 @@ if (isset($_POST['cep'])) {
 }
 ?>
 
-<form action="<?= isset($cep) ? "./?p=formaddresses&editar=$id" : "" ?>" method="post">
-    <input name="id" disabled value="<?= isset($cep) ? $id : ""; ?>"><br>
-    <label>Cep</label>
-    <input type="number" name="cep" value="<?= isset($cep) ? $cep : ""; ?>"><br>
-    <label>Number</label>
-    <input type="number" name="number" value="<?= isset($number) ? $number : ""; ?>">
-    <button type="submit" value="save" class="btn btn-success"> Salvar</button>
-</form>
+<div>
+    <form action="<?= isset($cep) ? "./?p=formaddresses&editar=$id" : "" ?>" method="post">
+        <input name="id" disabled value="<?= isset($cep) ? $id : ""; ?>"><br>
+        <label>Cep</label>
+        <input type="number" name="cep" value="<?= isset($cep) ? $cep : ""; ?>"><br>
+        <label>Number</label>
+        <input type="number" name="number" value="<?= isset($number) ? $number : ""; ?>">
+        <button type="submit" value="save"> Salvar</button>
+    </form>
+    <hr>
+    <a href='?p=addresses'><button>Listar endereços</button></a>
+</div>

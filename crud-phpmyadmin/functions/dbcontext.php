@@ -1,7 +1,7 @@
 <?php
 function conn_db()
 {
-    return new PDO("mysql:host=127.0.0.1:3308; dbname=aula-database", "root", "");
+    return new PDO("mysql:host=localhost:3308; dbname=aula-database", "root", "");
 }
 
 function fetchtable($table){
