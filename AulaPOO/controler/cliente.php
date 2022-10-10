@@ -1,6 +1,7 @@
 <?php
-namespace Model;
+namespace Controler;
 require_once("./model/clienteDao.php");
+use Model\Cliente as ClienteDao;
 
 class Cliente{
     public $id, $nome, $sobrenome, $ddd, $telefone;

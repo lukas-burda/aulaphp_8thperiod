@@ -2,7 +2,7 @@
 <?php
     // Inclui o arquivo de controle
     require_once("./controler/cliente.php");
-    use Model\Cliente;
+    use Controler\Cliente;
 
     $cliente = new Cliente();
 

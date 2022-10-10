@@ -2,7 +2,7 @@
 <?php
     // Inclui o arquivo de controle
     require_once("./controler/cliente.php");
-    use Model\Cliente;
+    use Controler\Cliente;
     // Chama a função de listar clientes do BD e armazena o retorno em um Array
 
     if (isset($_GET["del"])){

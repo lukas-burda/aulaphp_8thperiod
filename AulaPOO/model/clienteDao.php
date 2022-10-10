@@ -2,7 +2,7 @@
 namespace Model;
 require_once("./model/conexao.php");
 
-class ClienteDao{
+class Cliente{
     public $id, $nome, $sobrenome, $ddd, $telefone;
 
     public function __get($nome){
@@ -14,7 +14,7 @@ class ClienteDao{
     }
 
 // Cria uma função de cadastro de cliente no BD que recebe um Array
-public function cadCliente(Cliente $c){
+public function cadCliente($c){
     // Chama a função que cria um objeto PDO
     $pdo = Conexao::getConn();
     // Prepara a query retirando possíveis injections
