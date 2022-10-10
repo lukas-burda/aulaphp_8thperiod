@@ -4,7 +4,11 @@
     // Cria uma função para buscar o cliente que será alterado 
     function alterarClientes($id){
         //Busca no Banco de dados o Cliente para ser alterado
+        if(is_int($id)){
         return buscaCliente ($id);
+        }else{
+            throw new Exception("Não é um inteiro");
+        }
   
     }
 
