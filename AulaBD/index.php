@@ -7,6 +7,12 @@
 <body>
 <h1> Trabalhando com Banco de Dados</h1>
 
+
+
+
+
+
+
 <?php
 //Coneta ao banco de dados
 $pdo = new PDO("mysql:host=localhost; dbname=aula", "root","");
