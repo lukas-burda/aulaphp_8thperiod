@@ -1,8 +1,10 @@
 <?php 
     // Inclui o arquivo de controle
-    require_once("./controler/listaClientes.php");
-    //Chama a função de listar clientes
-    $arrayClientes = listarCliente();
+    require_once("./controler/cliente.php");
+    use Controler\Cliente;
+    // Chama a função de listar clientes do BD e armazena o retorno em um Array
+    $clientes = new Cliente();
+    $arrayClientes = $clientes->listaClientes();
     //Cria uma variável para concatenar os retornos
     $listaClientes = "<br><br><table>";
     //Percorre o Array com os clientes
@@ -19,11 +21,5 @@
     }
     //Retorna o Array completo e fecha a tabela
     echo "$listaClientes </table>";
-
-
-echo "<hr>";
-
-
-
 ?>
 

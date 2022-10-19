@@ -13,7 +13,6 @@
         echo cadCliente($arrayCliente);
         //retorna um botão de voltar pra Home
         echo '<a href="../index.php">Voltar<a/>';
-    }else{
-       reader("Location:../index.php");
+        header("location: ../index.php");
     }
 ?>
